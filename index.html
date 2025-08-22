@@ -1,102 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Affy Heena Artist</title>
+  <meta name="description" content="Affy Heena Artist — Bridal & party mehndi services. View designs, pricing, and book your slot online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand:#7a2f2a; /* mehndi brown */
+      --brand-2:#b76e54; /* warm accent */
+      --cream:#faf6f1;
+    }
+    .font-display{font-family:"Playfair Display",serif}
+    .font-sans{font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",sans-serif}
+    .ring-ornament{background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,.06),transparent 50%)}
+    .henna-border{background-image:url('https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?q=80&w=1200&auto=format&fit=crop');background-size:cover;background-position:center;filter:grayscale(100%) contrast(.8) opacity(.08)}
+  </style>
 </head>
-<body class="font-sans text-stone-800">
-
-  <!-- Header -->
-  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold">Affy Heena Artist</h1>
-      <nav class="space-x-6">
-        <a href="#about" class="hover:text-pink-600">About</a>
-        <a href="#gallery" class="hover:text-pink-600">Gallery</a>
-        <a href="#contact" class="hover:text-pink-600">Contact</a>
-      </nav>
+<body class="font-sans bg-[var(--cream)] text-stone-800 selection:bg-[var(--brand)]/20">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/85 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-2xl bg-[var(--brand)] text-white grid place-items-center shadow-md">🫶</div>
+          <div>
+            <div class="text-xl font-display leading-none text-[var(--brand)] group-hover:opacity-90">Affy Heena</div>
+            <div class="text-[11px] uppercase tracking-widest text-stone-500">Mehndi • Art • Bridal</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a class="hover:text-[var(--brand)]" href="#services">Services</a>
+          <a class="hover:text-[var(--brand)]" href="#gallery">Gallery</a>
+          <a class="hover:text-[var(--brand)]" href="#pricing">Pricing</a>
+          <a class="hover:text-[var(--brand)]" href="#reviews">Reviews</a>
+          <a class="hover:text-[var(--brand)]" href="#faq">FAQ</a>
+          <a class="hover:text-[var(--brand)]" href="#contact">Contact</a>
+          <a href="#book" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[var(--brand)] text-white shadow-sm hover:shadow transition">Book Now<span aria-hidden>→</span></a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-stone-300">
+          <span class="sr-only">Open menu</span>☰
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-stone-200 bg-white">
+      <div class="px-4 py-3 grid gap-2 text-sm">
+        <a class="py-1" href="#services">Services</a>
+        <a class="py-1" href="#gallery">Gallery</a>
+        <a class="py-1" href="#pricing">Pricing</a>
+        <a class="py-1" href="#reviews">Reviews</a>
+        <a class="py-1" href="#faq">FAQ</a>
+        <a class="py-1" href="#contact">Contact</a>
+        <a class="mt-1 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-[var(--brand)] text-white" href="#book">Book Now →</a>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 to-pink-300">
-    <div class="text-center px-4">
-      <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Bridal & Party Mehndi</h2>
-      <p class="text-lg mb-6">Beautiful Heena Designs in Kuwait – Book Your Slot Now!</p>
-      <a href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" 
-         class="px-6 py-3 bg-pink-600 text-white rounded-xl shadow hover:bg-pink-700">
-        Book on WhatsApp
-      </a>
+  <section id="home" class="relative overflow-hidden">
+    <div class="henna-border absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="font-display text-4xl md:text-6xl leading-tight text-stone-900">
+            Elegant <span class="text-[var(--brand)]">Mehndi</span> for Every Occasion
+          </h1>
+          <p class="mt-4 text-stone-600 max-w-prose">Bridal, Arabic, Indo-Pak, and custom henna designs crafted with natural, skin-safe paste. Based in your city — available for weddings, parties, and festivals.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#book" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[var(--brand)] text-white shadow hover:shadow-md">Book Your Slot →</a>
+            <a href="#gallery" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-stone-300 bg-white hover:border-stone-400">View Gallery</a>
+            <a href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-stone-300 bg-white hover:border-stone-400">WhatsApp</a>
+          </div>
+          <div class="mt-6 text-xs text-stone-500">100% natural henna • Stain up to 10–14 days • Travel available</div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 rounded-[2rem] ring-1 ring-stone-200 ring-ornament"></div>
+          <img class="relative rounded-[2rem] shadow-xl w-full aspect-[4/5] object-cover" alt="Featured mehndi design" src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=1200&auto=format&fit=crop"/>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-16 md:py-24 bg-white">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-stone-600">
-        I am Affy, a professional Heena artist based in Kuwait. 
-        Specializing in bridal, party, and festive mehndi designs. 
-        Available for bookings across Salmiya and nearby areas.
-      </p>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="py-16 bg-stone-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <iframe src="https://www.instagram.com/p/DNqRWljp5nq/embed" 
-                class="w-full h-96 rounded-xl border"></iframe>
-        <iframe src="https://www.instagram.com/p/DNqRSIvpyfn/embed" 
-                class="w-full h-96 rounded-xl border"></iframe>
-        <iframe src="https://www.instagram.com/p/DNqRLnqp8Qv/embed" 
-                class="w-full h-96 rounded-xl border"></iframe>
-        <iframe src="https://www.instagram.com/p/DNqRD--pylW/embed" 
-                class="w-full h-96 rounded-xl border"></iframe>
-        <iframe src="https://www.instagram.com/p/DNqQym8p7l9/embed" 
-                class="w-full h-96 rounded-xl border"></iframe>
-
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl mb-8 text-center">My Mehndi Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNqRWljp5nq/?igsh=djZxNm9ldGZmems5" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNqRSIvpyfn/?igsh=ODQ4bmZ0cmpwczQ4" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNqRLnqp8Qv/?igsh=MXFqendzajYzZWJ4NA==" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNqRD--pylW/?igsh=MWJzbWk4bGF4bG8xYw==" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DNqQym8p7l9/?igsh=ZG9rZnF5ZzNvN2Nw" data-instgrm-version="14"></blockquote>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 md:py-24 bg-white">
+  <section id="contact" class="py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div class="space-y-4">
-          <h2 class="text-3xl font-bold">Get In Touch</h2>
+          <h2 class="font-display text-3xl md:text-4xl">Get In Touch</h2>
           <p class="text-stone-600">For urgent bookings, call or WhatsApp directly.</p>
           <ul class="text-sm">
-            <li>📍 Location: Kuwait, Nasir Al Bader Street, Salmiya</li>
+            <li>📍 Based in: Kuwait</li>
             <li>📞 Phone: <a href="tel:+96598755309" class="text-blue-600">+965 98755309</a></li>
             <li>📧 Email: <a href="mailto:azheenfarooqi@gmail.com" class="text-blue-600">azheenfarooqi@gmail.com</a></li>
             <li>🕰️ Hours: 10 AM – 8 PM</li>
           </ul>
           <div class="flex gap-3 pt-2">
-            <a class="px-4 py-2 rounded-xl border border-stone-300" 
-               href="https://www.instagram.com/affy_heena__artist" target="_blank">Instagram</a>
-            <a class="px-4 py-2 rounded-xl border border-stone-300" 
-               href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank">WhatsApp</a>
+            <a class="px-4 py-2 rounded-xl border border-stone-300" href="https://www.instagram.com/affy_heena__artist?igsh=MTU0eHk2a3dtNDc4ZQ==" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="px-4 py-2 rounded-xl border border-stone-300" href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
-        <!-- Google Maps -->
-        <iframe class="w-full h-72 rounded-2xl border border-stone-200" loading="lazy"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.0243430118016!2d48.0747086!3d29.3336295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9bc57d6f3a4f%3A0xb1234567890abcd!2sNasir%20Al%20Bader%20St%2C%20Salmiya%2C%20Kuwait!5e0!3m2!1sen!2sin!4v1680000000000">
-        </iframe>
+        <iframe class="w-full h-72 rounded-2xl border border-stone-200" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0357346156!2d47.4817669!3d29.31166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9b9a4c4f3a8f%3A0xdeadbeefcafe123!2sKuwait!5e0!3m2!1sen!2sin!4v1680000000000"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-stone-900 text-white text-center py-6">
-    <p>&copy; 2025 Affy Heena Artist. All rights reserved.</p>
+  <footer class="py-10 border-t border-stone-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-stone-500">© <span id="year"></span> Affy Heena Artist. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
