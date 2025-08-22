@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Affy Heena Artist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="font-sans bg-stone-50 text-stone-800">
-    
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-rose-100 to-pink-200 min-h-screen flex items-center justify-center text-center px-6">
-      <div>
-        <h1 class="font-bold text-4xl md:text-6xl text-stone-800">Affy Heena Artist</h1>
-        <p class="mt-4 text-lg md:text-xl text-stone-700">Bringing elegance to every occasion with beautiful Mehndi designs</p>
-        <div class="mt-6 flex gap-4 justify-center">
-          <a href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank" class="px-6 py-3 bg-green-600 text-white rounded-xl shadow hover:bg-green-700">Book on WhatsApp</a>
-          <a href="https://www.instagram.com/affy_heena__artist?igsh=MTU0eHk2a3dtNDc4ZQ==" target="_blank" class="px-6 py-3 bg-pink-600 text-white rounded-xl shadow hover:bg-pink-700">View Instagram</a>
-        </div>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affy Heena Artist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-stone-800">
 
-    <!-- Gallery -->
-    <section id="gallery" class="py-16 md:py-24 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Gallery</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <a href="https://www.instagram.com/p/DNqRWljp5nq/?igsh=djZxNm9ldGZmems5" target="_blank">
-            <img class="rounded-xl shadow" src="https://www.instagram.com/p/DNqRWljp5nq/media/?size=l" alt="Heena Design 1"/>
-          </a>
-          <a href="https://www.instagram.com/p/DNqRSIvpyfn/?igsh=ODQ4bmZ0cmpwczQ4" target="_blank">
-            <img class="rounded-xl shadow" src="https://www.instagram.com/p/DNqRSIvpyfn/media/?size=l" alt="Heena Design 2"/>
-          </a>
-          <a href="https://www.instagram.com/p/DNqRLnqp8Qv/?igsh=MXFqendzajYzZWJ4NA==" target="_blank">
-            <img class="rounded-xl shadow" src="https://www.instagram.com/p/DNqRLnqp8Qv/media/?size=l" alt="Heena Design 3"/>
-          </a>
-          <a href="https://www.instagram.com/p/DNqRD--pylW/?igsh=MWJzbWk4bGF4bG8xYw==" target="_blank">
-            <img class="rounded-xl shadow" src="https://www.instagram.com/p/DNqRD--pylW/media/?size=l" alt="Heena Design 4"/>
-          </a>
-          <a href="https://www.instagram.com/p/DNqQym8p7l9/?igsh=ZG9rZnF5ZzNvN2Nw" target="_blank">
-            <img class="rounded-xl shadow" src="https://www.instagram.com/p/DNqQym8p7l9/media/?size=l" alt="Heena Design 5"/>
-          </a>
-        </div>
-      </div>
-    </section>
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">Affy Heena Artist</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-pink-600">About</a>
+        <a href="#gallery" class="hover:text-pink-600">Gallery</a>
+        <a href="#contact" class="hover:text-pink-600">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact -->
-    <section id="contact" class="py-16 md:py-24 bg-stone-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-          <div class="space-y-4">
-            <h2 class="font-bold text-3xl md:text-4xl">Get In Touch</h2>
-            <p class="text-stone-600">For urgent bookings, call or WhatsApp directly.</p>
-            <ul class="text-sm">
-              <li>📍 Location: Kuwait, Nasir Al Bader Street, Salmiya</li>
-              <li>📞 Phone: <a href="tel:+96598755309" class="text-blue-600">+965 98755309</a></li>
-              <li>📧 Email: <a href="mailto:azheenfarooqi@gmail.com" class="text-blue-600">azheenfarooqi@gmail.com</a></li>
-              <li>🕰️ Hours: 10 AM – 8 PM</li>
-            </ul>
-            <div class="flex gap-3 pt-2">
-              <a class="px-4 py-2 rounded-xl border border-stone-300" href="https://www.instagram.com/affy_heena__artist?igsh=MTU0eHk2a3dtNDc4ZQ==" target="_blank">Instagram</a>
-              <a class="px-4 py-2 rounded-xl border border-stone-300" href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank">WhatsApp</a>
-            </div>
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 to-pink-300">
+    <div class="text-center px-4">
+      <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Bridal & Party Mehndi</h2>
+      <p class="text-lg mb-6">Beautiful Heena Designs in Kuwait – Book Your Slot Now!</p>
+      <a href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" 
+         class="px-6 py-3 bg-pink-600 text-white rounded-xl shadow hover:bg-pink-700">
+        Book on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-stone-600">
+        I am Affy, a professional Heena artist based in Kuwait. 
+        Specializing in bridal, party, and festive mehndi designs. 
+        Available for bookings across Salmiya and nearby areas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 bg-stone-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <iframe src="https://www.instagram.com/p/DNqRWljp5nq/embed" 
+                class="w-full h-96 rounded-xl border"></iframe>
+        <iframe src="https://www.instagram.com/p/DNqRSIvpyfn/embed" 
+                class="w-full h-96 rounded-xl border"></iframe>
+        <iframe src="https://www.instagram.com/p/DNqRLnqp8Qv/embed" 
+                class="w-full h-96 rounded-xl border"></iframe>
+        <iframe src="https://www.instagram.com/p/DNqRD--pylW/embed" 
+                class="w-full h-96 rounded-xl border"></iframe>
+        <iframe src="https://www.instagram.com/p/DNqQym8p7l9/embed" 
+                class="w-full h-96 rounded-xl border"></iframe>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold">Get In Touch</h2>
+          <p class="text-stone-600">For urgent bookings, call or WhatsApp directly.</p>
+          <ul class="text-sm">
+            <li>📍 Location: Kuwait, Nasir Al Bader Street, Salmiya</li>
+            <li>📞 Phone: <a href="tel:+96598755309" class="text-blue-600">+965 98755309</a></li>
+            <li>📧 Email: <a href="mailto:azheenfarooqi@gmail.com" class="text-blue-600">azheenfarooqi@gmail.com</a></li>
+            <li>🕰️ Hours: 10 AM – 8 PM</li>
+          </ul>
+          <div class="flex gap-3 pt-2">
+            <a class="px-4 py-2 rounded-xl border border-stone-300" 
+               href="https://www.instagram.com/affy_heena__artist" target="_blank">Instagram</a>
+            <a class="px-4 py-2 rounded-xl border border-stone-300" 
+               href="https://wa.me/96599029764?text=Hi%20Affy%2C%20I%20want%20to%20book%20a%20mehndi%20slot" target="_blank">WhatsApp</a>
           </div>
-          <iframe class="w-full h-72 rounded-2xl border border-stone-200" loading="lazy" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.0243430118016!2d48.0747086!3d29.3336295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9bc57d6f3a4f%3A0xb1234567890abcd!2sNasir%20Al%20Bader%20St%2C%20Salmiya%2C%20Kuwait!5e0!3m2!1sen!2sin!4v1680000000000">
-          </iframe>
         </div>
+        <!-- Google Maps -->
+        <iframe class="w-full h-72 rounded-2xl border border-stone-200" loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.0243430118016!2d48.0747086!3d29.3336295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9bc57d6f3a4f%3A0xb1234567890abcd!2sNasir%20Al%20Bader%20St%2C%20Salmiya%2C%20Kuwait!5e0!3m2!1sen!2sin!4v1680000000000">
+        </iframe>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="py-6 text-center text-stone-500 text-sm">
-      © 2025 Affy Heena Artist. All rights reserved.
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-white text-center py-6">
+    <p>&copy; 2025 Affy Heena Artist. All rights reserved.</p>
+  </footer>
 
-  </body>
+</body>
 </html>
